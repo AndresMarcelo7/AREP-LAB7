@@ -1,7 +1,4 @@
 # AREP-LAB7 Safe distributed application on all fronts
-
-Demo video is at the end of this file  
-
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
@@ -44,21 +41,21 @@ CircleCI : [![CircleCI](https://circleci.com/gh/AndresMarcelo7/AREP-LAB7-Service
 
 ### Architecture:
 The implementation follows the following Architecture:
-![Imagen](img/architecture)
+![Imagen](img/architecture.jpg)
 
 ### Components:
 We have 2 EC2 instances on Amazon Web Services, each one have a Docker container running on port 8081 with the a web server made with spark framework.
-![Imagen](img/maquinas)
+![Imagen](img/maquinas.jpg)
 
 the first server is secured with a login view, and you'll be only able to send requests to the second server if you are logged in, the login component works with cyphered passwords using MD5 Hash. 
 Also both servers are secured with certificates, this means that the servers will be able to communicate only if each one has the other's certificate(Public Key) in its TrustStore and that's how it works,thanks to that the requests to the servers are only via HTTPS. Next, theres an image of how the requests are made:
 
 - Requesting the Login Server(Browser):
-![Imagen](img/requestLogin)
+![Imagen](img/requestLogin.jpg)
 - Requesting Service server(Request Code):
-![Imagen](img/requestService)
+![Imagen](img/requestService.jpg)
 - Requesting the Login Server with HTTP (NOT WORK)
-![Imagen](img/requestLoginHttp)
+![Imagen](img/requestLoginHttp.jpg)
 
 ### EndPoints:
 The available endpoints for the Login service are:
@@ -71,15 +68,15 @@ And the service server have only one endpoint:
 
 ### Certificates:
 - Login server Certificate:
-![Imagen](img/logincertificate)
+![Imagen](img/loginCertificate.jpg)
 - Service server Certificate:
-![Imagen](img/servicecertificate)
+![Imagen](img/serviceCertificate.jpg)
 
 ### Docker containers in EC2 machines:
 - Login Server
-![Imagen](img/containerlogin)
+![Imagen](img/containerlogin.jpg)
 - Service server
-![Imagen](img/containerservice)
+![Imagen](img/containerservice.jpg)
 
-### DEMO:
-The following video shows the results of the implementation. [VIDEO HERE](https://youtu.be/JdsTwXFex40)
+### Demo:
+The following video shows the results of the implementation. [VIDEO](https://youtu.be/JdsTwXFex40)
