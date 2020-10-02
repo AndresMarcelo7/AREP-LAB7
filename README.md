@@ -69,7 +69,7 @@ And the service server have only one endpoint:
 ### Certificates:
 - Login server Certificate:
 ![Imagen](img/loginCertificate.jpg)
-- Service server Certificate:
+- Service server Certificate:  
 ![Imagen](img/serviceCertificate.jpg)
 
 ### Docker containers in EC2 machines:
