@@ -67,7 +67,7 @@ And the service server have only one endpoint:
 - /service (This endpoint returns the Service Server date)
 
 ### Certificates:
-- Login server Certificate:
+- Login server Certificate:  
 ![Imagen](img/loginCertificate.jpg)
 - Service server Certificate:  
 ![Imagen](img/serviceCertificate.jpg)
